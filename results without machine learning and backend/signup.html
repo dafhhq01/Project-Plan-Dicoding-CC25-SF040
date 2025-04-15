@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body> 
+    <div class="container">
+        <h2>Sign Up</h2>
+
+        <form onsubmit="event.preventDefault(); window.location.href='login.html';">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+            
+            <button type="submit">Daftar</button>
+        </form>
+        
+        <p>Sudah punya akun? <a href="login.html">Login</a></p>
+        <p><a href="index.html">Kembali ke Home</a></p>
+    </div>
+
+</body>
+
+</html>

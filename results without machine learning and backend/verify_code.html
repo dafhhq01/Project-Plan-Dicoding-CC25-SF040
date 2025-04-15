@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi Kode</title>
+    <link rel="stylesheet" href="./css/verify_code.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Verifikasi Kode</h2>
+
+        <p>Masukkan kode yang telah dikirim ke email Anda:</p>
+
+        <form onsubmit="event.preventDefault(); window.location.href='change_password.html';">
+            <div class="code-container">
+                <input type="tel" maxlength="1" class="code-input" name="code" required>
+                <input type="tel" maxlength="1" class="code-input" name="code" required>
+                <input type="tel" maxlength="1" class="code-input" name="code" required>
+                <input type="tel" maxlength="1" class="code-input" name="code" required>
+            </div>
+            <button type="submit">Verifikasi</button>
+        </form>        
+        
+        <p id="message"></p>
+        <p><a href="resetpw.html">Kirim ulang kode</a></p>
+    </div>
+</body>
+
+</html>

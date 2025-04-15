@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        
+        <!-- Ubah form jadi dummy (tidak mengirim ke server) -->
+        <form onsubmit="event.preventDefault(); window.location.href='wireframe1.html';">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+            
+            <!-- Tombol login langsung trigger redirect -->
+            <button type="submit">Login</button>
+        </form>
+         
+        <p>Belum punya akun? <a href="signup.html">Sign Up</a></p>
+        <p>Lupa sandi? <a href="resetpw.html">Atur Ulang Sandi</a></p>
+        <p><a href="index.html">Kembali ke Home</a></p>
+    </div>
+</body>
+
+</html>
