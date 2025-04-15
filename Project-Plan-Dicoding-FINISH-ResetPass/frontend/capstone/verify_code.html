@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi Kode</title>
+    <link rel="stylesheet" href="../capstone/css/verify_code.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Verifikasi Kode</h2>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flash-messages">
+                {% for category, message in messages %}
+                    <li class="flash {{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <p>Masukkan kode yang telah dikirim ke email Anda:</p>
+        <form action="/verify_code" method="POST">
+            <div class="code-container">
+                <input type="tel" maxlength="1" class="code-input" name="code" required>
+                <input type="tel" maxlength="1" class="code-input" name="code" required>
+                <input type="tel" maxlength="1" class="code-input" name="code" required>
+                <input type="tel" maxlength="1" class="code-input" name="code" required>
+            </div>
+            <button type="submit">Verifikasi</button>
+        </form>        
+        <p id="message"></p>
+        <p><a href="{{ url_for('reset_password') }}">Kirim ulang kode</a></p>
+    </div>
+</body>
+
+</html>
